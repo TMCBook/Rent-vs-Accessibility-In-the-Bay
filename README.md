@@ -67,11 +67,6 @@ Most provided data is from Bright Data through The Bright Initiative.
 
 Results are reported by ZIP code only: no addresses, listings or reviewer names. Low access isn't the same as hardship (some low-access ZIPs are wealthy suburbs), and the model is least accurate in low-access ZIPs, where rent data is thinnest. Full discussion: `model/docs/ethics.md`.
 
-## Links
-
-- Slide deck: ⚠️ TODO (Nash Wu)
-- Video (≤ 5 min): ⚠️ TODO (Nash Wu)
-
 ## Acknowledgments
 
 Parts of this project were built with help from **Claude Opus 5.5** (Anthropic).
