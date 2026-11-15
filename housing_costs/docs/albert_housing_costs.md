@@ -140,11 +140,3 @@ Same method as Anna's access score, so the two are on one scale.
 
 ---
 
-## Notes for Person 4 and the map
-
-- **Join on `zipcode` as text.** Same 293 zip codes as Anna's table.
-- **Filter `low_data == False`** before findings, as with Anna's table.
-- **Good map layers:** `typical_rent`, `typical_home_value`, `income_needed_for_rent` (most intuitive for an audience), `affordability_score` (same 0–100 scale as Anna's `access_score`), `rent_change_since_2019_pct` (displacement pressure).
-- **Blank rent:** 45 reliable zip codes have no `typical_rent`. Show them as "no data", or fall back to `listing_median_rent` and label it as listing-based.
-- **For the redlining comparison:** the 1930s HOLC maps covered San Francisco, the East Bay (Oakland, Berkeley, Alameda) and San Jose. Joining HOLC polygons to zip codes (ZCTAs) by overlap would let the team compare `typical_rent`, `rent_change_since_2019_pct` and `access_score` across HOLC grades.
-- **Ethics:** results are zip-code level only. No addresses or individual listings.
