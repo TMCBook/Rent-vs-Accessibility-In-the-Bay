@@ -1,4 +1,4 @@
-# Essential Services Access: Anna (Person 3)
+# Essential Services Access
 
 **Datathon for Social Good 2026 · Bay Area Affordability Project**
 
