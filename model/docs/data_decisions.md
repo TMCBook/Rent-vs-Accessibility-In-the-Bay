@@ -26,7 +26,7 @@ hand-checked sample.
   0.572 vs 0.634). The model in `config.yaml` is the one chosen before the exposure.
 
 ## 2. Schemas (data contract — mirrors `src/data/schemas.py`)
-### zillow_research — owner: Albert (source data), adapter by Integrator
+### zillow_research
 | column | dtype | meaning | null handling |
 |---|---|---|---|
 | zipcode | string | 5-digit ZIP | never null |
@@ -36,7 +36,7 @@ hand-checked sample.
 | value | float | Zillow Home Value Index (ZHVI), $ | null where Zillow publishes none |
 | is_partial_year | bool | True for the Sep 2026 row | never null |
 
-### essentials — owner: Anna (method), rebuilt from raw by Integrator
+### essentials
 `src/data/clean_essentials.py` is a port of Anna's notebook (cells 4–31): same category lists,
 filters and formulas, run on raw Places + Zillow listings. One row per ZIP (293). Columns as in
 `../essential_services/docs/anna_essential_services.md`:
@@ -44,7 +44,7 @@ filters and formulas, run on raw Places + Zillow listings. One row per ZIP (293)
 `count_*_1mi`, `bank_to_checkcash_ratio`, `n_homes`, `low_data`, `median_rent`, `n_rentals`
 (null → 0).
 
-### indeed — owner: Integrator
+### indeed
 | column | dtype | meaning | null handling |
 |---|---|---|---|
 | jobid | string | Indeed posting id | |
