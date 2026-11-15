@@ -1,4 +1,4 @@
-# Housing Costs by Zip Code: Albert
+# Housing Costs by Zip Code
 
 **Datathon for Social Good 2026 · Bay Area Affordability Project**
 
