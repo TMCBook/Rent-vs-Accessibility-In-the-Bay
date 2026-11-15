@@ -164,17 +164,3 @@ Every place used in the analysis: name, category, bucket, latitude/longitude, ra
 
 ---
 
-## Notes for Person 4
-
-- **Join on `zipcode` as text** so leading zeros and types match across files.
-- **Filter `low_data == False`** before using results in findings or the fairness analysis.
-- **`access_score` is ready to use** as the "essentials access" sub-score (already 0–100, higher = better).
-- **There is no cost score yet.** County-level costs from the MIT Living Wage Calculator were not added.
-- **Known data issues:**
-    - A few `low_data` rows carry wrong county labels from Zillow. For example, 93463 (Solvang) and 96045 (Horse Creek) are labeled San Mateo County. They're excluded once you filter `low_data == False`.
-    - 95377 (Tracy) and 95391 (Mountain House) are labeled Alameda County but are mostly in San Joaquin County; both are `low_data`.
-- **Limitations to mention in the slides:**
-    - Distance to a bus stop doesn't say how often the bus comes.
-    - The score uses equal weights for the 5 services; other weightings are possible.
-    - Rent comes from listings, not from what current residents actually pay. Census median household income would be a stronger affordability measure.
-    - Results are shown at zip code level only, never individual addresses.
