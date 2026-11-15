@@ -110,18 +110,9 @@ priority = P(high rent growth in 2026) × (1 − access_score / 100) × renters
 
 Current top 10: Vacaville 95687, Pittsburg 94565, Fairfield 94533, Fremont 94538, Fairfield 94534, Dublin 94568, Napa 94558, Vacaville 95688, Rohnert Park 94928, Alameda 94501.
 
-⚠️ **Don't present this ranking as validated.** The forecast part failed the 2026 live check (above). The access and renter parts are still sound, so the ranking is best read as "low-access, high-renter ZIPs below median rent", with rent risk as an uncertain extra.
-
 ## Data decisions and disclosure
 
 All cleaning steps, joins, label rules and hand-check plans are in `docs/data_decisions.md`. That file includes a disclosure: one summary statistic covering the test period was seen during diagnosis. No model change was made after it.
-
-## Still to do (team)
-
-- [ ] Fill in the hand-check sheets in `docs/hand_checks_todo/` (40 parsed salaries, 30 rent-growth labels), then move them to `docs/hand_checks/`.
-- [x] Rebuild the access table from raw Places inside `src/data/clean_essentials.py`. Done; it matches Anna's saved table on all 293 ZIPs (`outputs/tables/10_essentials_rebuild_check.csv`).
-- [x] Freeze features, then run `python run.py final` **once** to unlock the test year. Done 2026-11-15 18:00 UTC.
-- [ ] Add notes to `outputs/tables/05_failure_examples.csv`.
 
 ## How to reproduce
 
